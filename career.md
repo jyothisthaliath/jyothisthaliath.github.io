@@ -31,11 +31,12 @@ title: Career & Experience
 *   **PCI-DSS v3.2.1** – Implementer
 *   **ISO 27001:2013** – Lead Auditor
 *   **AWS** – Certified Cloud Practitioner
-*   **Microsoft** – Azure Fundamentals | Security, Compliance and Identity Fundamentals
+*   **Microsoft** – Azure Fundamentals
+*   **Microsoft** – Security, Compliance and Identity Fundamentals
 *   **Fortinet** – Network Security Expert (NSE Level 3)
 *   **ITIL 4 Foundation** – IT Service Management
-*   **Indian Institute of Banking and Finance** – Certified Associate (CAIIB) & Diploma in Information System Audit (DISA)
-
+*   **Indian Institute of Banking and Finance** – Certified Associate (CAIIB)
+*   **Indian Institute of Banking and Finance** – Diploma in Information System Audit (DISA)
 ---
 
 ### Skills Matrix
