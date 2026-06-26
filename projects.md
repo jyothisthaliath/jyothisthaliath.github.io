@@ -4,14 +4,18 @@ title: Technical Showcase
 ---
 
 ## Technical Project Portfolio
-This section automatically tracks my hands-on DIY projects, infrastructure labs, and technical blueprints as I publish them. 
+Things I am working on currently:  
 
-<ul>
+<ul style="list-style-type: none; padding-left: 0;">
   {% for page in site.pages %}
     {% if page.category == 'project' %}
-      <li>
-        <strong><a href="{{ page.url | relative_url }}">{{ page.title }}</a></strong>
-        {% if page.description %}<br><small>{{ page.description }}</small>{% endif %}
+      <li style="margin-bottom: 1.5rem; border-bottom: 1px solid #eee; padding-bottom: 1rem;">
+        <strong style="font-size: 1.2rem;">
+          <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
+        </strong>
+        {% if page.description %}
+          <p style="margin: 0.25rem 0; color: #555;">{{ page.description }}</p>
+        {% endif %}
       </li>
     {% endif %}
   {% endfor %}
@@ -20,7 +24,7 @@ This section automatically tracks my hands-on DIY projects, infrastructure labs,
 ---
 
 ## GitHub Projects 
-List of public repositories and open-source configurations hosted on my GitHub profile.
+List of public repositories and open-source configurations hosted on my GitHub profile:
 
 <div id="repo-list">Loading repositories...</div>
 
@@ -34,7 +38,6 @@ List of public repositories and open-source configurations hosted on my GitHub p
       return response.json();
     })
     .then(repos => {
-      // Filter out your profile README or pages repo if you want to hide them
       const filteredRepos = repos.filter(repo => repo.name !== `${username}.github.io`);
 
       if (filteredRepos.length === 0) {
@@ -42,7 +45,7 @@ List of public repositories and open-source configurations hosted on my GitHub p
         return;
       }
 
-      let html = '<ul style="list-style-type: none; padding-left: 0;">';
+      let html = '<ul style="list-style-type: none; padding-left: 0; margin-top: 0;">';
       filteredRepos.forEach(repo => {
         html += `
           <li style="margin-bottom: 1.5rem; border-bottom: 1px solid #eee; padding-bottom: 1rem;">
