@@ -3,10 +3,24 @@ layout: default
 title: Technical Showcase
 ---
 
-# Technical Showcase
-A dynamic list of public repositories and open-source configurations hosted on my GitHub profile.
+## Technical Project Portfolio
+This section automatically tracks my hands-on DIY projects, infrastructure labs, and technical blueprints as I publish them. 
+
+<ul>
+  {% for page in site.pages %}
+    {% if page.category == 'project' %}
+      <li>
+        <strong><a href="{{ page.url | relative_url }}">{{ page.title }}</a></strong>
+        {% if page.description %}<br><small>{{ page.description }}</small>{% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
 
 ---
+
+## GitHub Projects 
+List of public repositories and open-source configurations hosted on my GitHub profile.
 
 <div id="repo-list">Loading repositories...</div>
 
@@ -50,6 +64,3 @@ A dynamic list of public repositories and open-source configurations hosted on m
       container.innerHTML = `<p style="color: red;">Error loading repositories: ${error.message}</p>`;
     });
 </script>
-
----
-*Back to [Home](index.html)*
