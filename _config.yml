@@ -1,4 +1,9 @@
 theme: jekyll-theme-minimal
 title: Jyothis Thaliath
-description: Bookmark this to keep an eye on my project updates!
-
+description: |
+  Bookmark this to keep an eye on my project updates!
+  
+  ### Navigation
+  - [Technical Showcase](/projects.html)
+  - [Career & Experience](/career.html)
+  - [Secure Contact](/contact.html)
