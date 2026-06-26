@@ -54,4 +54,4 @@ title: Career & Experience
     *   Federal Institute of Science and Technology (FISAT), Kochi, India (2008 – 2012)
 
 ---
- 📥 **[Download Full Resume (PDF)](resume.pdf)**
+ 📥 **[Download Full Resume (PDF)](public-resume.pdf)**
