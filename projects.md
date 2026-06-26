@@ -21,8 +21,6 @@ Things I am working on currently:
   {% endfor %}
 </ul>
 
----
-
 ## GitHub Projects 
 List of public repositories and open-source configurations hosted on my GitHub profile:
 
@@ -47,13 +45,24 @@ List of public repositories and open-source configurations hosted on my GitHub p
 
       let html = '<ul style="list-style-type: none; padding-left: 0; margin-top: 0;">';
       filteredRepos.forEach(repo => {
+        // Generate tag badges if topics exist
+        let tagsHtml = '';
+        if (repo.topics && repo.topics.length > 0) {
+          tagsHtml = '<div style="margin: 0.5rem 0; display: flex; flex-wrap: wrap; gap: 0.4rem;">';
+          repo.topics.forEach(topic => {
+            tagsHtml += `<span style="background-color: #f1f8ff; color: #0366d6; font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 2px;">${topic}</span>`;
+          });
+          tagsHtml += '</div>';
+        }
+
         html += `
           <li style="margin-bottom: 1.5rem; border-bottom: 1px solid #eee; padding-bottom: 1rem;">
             <strong style="font-size: 1.2rem;">
               <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer">${repo.name}</a>
             </strong>
             <p style="margin: 0.25rem 0; color: #555;">${repo.description || 'No description provided.'}</p>
-            <small style="color: #888;">
+            ${tagsHtml}
+            <small style="color: #888; display: block; margin-top: 0.4rem;">
               ${repo.language ? `<span>● ${repo.language}</span> &nbsp;&nbsp;` : ''}
               <span>Updated: ${new Date(repo.updated_at).toLocaleDateString()}</span>
             </small>
