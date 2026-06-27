@@ -350,23 +350,43 @@ strong {
   }
 
   .hero-name {
-    font-size: 28px;
+    font-size: clamp(16px, 5.2vw, 26px);
+    white-space: nowrap;
   }
 
   .hero-title {
-    font-size: 20px;
+    font-size: clamp(12px, 3.8vw, 18px);
+    white-space: nowrap;
   }
 
   .hero-tagline {
     display: none;
   }
 
-  .focus-card-title {
-    font-size: 0.925rem;
+  /* Consistent & readable card text sizes across all pages in mobile view */
+  .focus-card-title,
+  .project-card-title,
+  .timeline-entry h4 {
+    font-size: 15px;
   }
 
-  .focus-card p {
-    font-size: 0.9rem;
+  .focus-card p,
+  .project-card-desc,
+  .timeline-entry p {
+    font-size: 13.5px;
+  }
+
+  .timeline-entry .meta {
+    font-size: 12px;
+  }
+
+  .contact-card label {
+    font-size: 13.5px;
+  }
+
+  .contact-card input,
+  .contact-card textarea {
+    font-size: 14px;
   }
 }
 
