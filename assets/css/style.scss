@@ -106,8 +106,8 @@ strong { font-weight: 600; color: var(--text-primary); }
 /* Profile block (photo + text — direct flex children of site-hero-inner) */
 .hero-photo {
   flex-shrink: 0;
-  width: 88px;
-  height: 88px;
+  width: 114px;
+  height: 114px;
   border-radius: var(--radius-full);
   object-fit: cover;
   object-position: center top;
@@ -235,6 +235,9 @@ strong { font-weight: 600; color: var(--text-primary); }
   margin: 0 auto;
   padding: 2.5rem 1.5rem 4rem;
 }
+
+/* Kill top gap when page starts with a heading */
+.main-container > *:first-child { margin-top: 0 !important; }
 
 
 
