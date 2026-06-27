@@ -54,7 +54,7 @@ html {
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.7;
   color: var(--text-primary);
   background: var(--bg);
@@ -200,11 +200,12 @@ strong {
 }
 
 .hero-name {
-  font-size: 1.6rem;
+  font-size: clamp(1.2rem, 3.2vw, 1.6rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--text-primary);
   margin: 0 0 0.25rem;
+  white-space: nowrap;
 }
 
 .hero-name a {
@@ -218,10 +219,11 @@ strong {
 }
 
 .hero-title {
-  font-size: 1rem;
+  font-size: clamp(0.85rem, 2vw, 1rem);
   font-weight: 600;
   color: var(--accent);
   margin: 0 0 0.2rem;
+  white-space: nowrap;
 }
 
 .hero-tagline {
