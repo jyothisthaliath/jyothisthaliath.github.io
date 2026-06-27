@@ -8,7 +8,7 @@ title: Jyothis George Thaliath | Information Security Leader
   <div class="hero-content">
     <h1 class="hero-name">Jyothis George Thaliath</h1>
     <p class="hero-title">Senior Manager – Information Security · Union Bank of India</p>
-    <p class="hero-tagline">13+ years translating security strategy into resilient banking infrastructure — from SOC modernisation to regulatory compliance and zero-trust architecture.</p>
+    <p class="hero-tagline">13+ years translating security strategy into resilient banking infrastructure </p>
     <div class="hero-actions">
       <a href="{{ '/projects.html' | relative_url }}" class="btn btn-primary">View Projects</a>
       <a href="{{ '/career.html' | relative_url }}" class="btn btn-secondary">Career &amp; Resume</a>
