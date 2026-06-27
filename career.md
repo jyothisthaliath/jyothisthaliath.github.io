@@ -30,18 +30,18 @@ title: Career & Experience
 ### Certifications
 
 <ul class="cert-list">
-  <li><span class="cert-badge">✓ CompTIA Security+ CE</span></li>
-  <li><span class="cert-badge">✓ ISC2 Certified in Cybersecurity</span></li>
-  <li><span class="cert-badge">✓ Zscaler Zero Trust Architect</span></li>
-  <li><span class="cert-badge">✓ PCI-DSS v3.2.1 Implementer</span></li>
-  <li><span class="cert-badge">✓ ISO 27001:2013 Lead Auditor</span></li>
-  <li><span class="cert-badge">✓ AWS Cloud Practitioner</span></li>
-  <li><span class="cert-badge">✓ Azure Fundamentals</span></li>
-  <li><span class="cert-badge">✓ Microsoft SC-900</span></li>
-  <li><span class="cert-badge">✓ Fortinet NSE Level 3</span></li>
-  <li><span class="cert-badge">✓ ITIL 4 Foundation</span></li>
-  <li><span class="cert-badge">✓ IIBF CAIIB</span></li>
-  <li><span class="cert-badge">✓ IIBF DISA</span></li>
+  <li><span class="cert-badge">CompTIA Security+ CE</span></li>
+  <li><span class="cert-badge">ISC2 Certified in Cybersecurity</span></li>
+  <li><span class="cert-badge">Zscaler Zero Trust Architect</span></li>
+  <li><span class="cert-badge">PCI-DSS v3.2.1 Implementer</span></li>
+  <li><span class="cert-badge">ISO 27001:2013 Lead Auditor</span></li>
+  <li><span class="cert-badge">AWS Cloud Practitioner</span></li>
+  <li><span class="cert-badge">Azure Fundamentals</span></li>
+  <li><span class="cert-badge">Microsoft SC-900</span></li>
+  <li><span class="cert-badge">Fortinet NSE Level 3</span></li>
+  <li><span class="cert-badge">ITIL 4 Foundation</span></li>
+  <li><span class="cert-badge">IIBF CAIIB</span></li>
+  <li><span class="cert-badge">IIBF DISA</span></li>
 </ul>
 
 ---

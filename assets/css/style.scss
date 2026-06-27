@@ -305,12 +305,12 @@ strong { font-weight: 600; color: var(--text-primary); }
   align-items: center;
   gap: 0.3rem;
   padding: 0.3rem 0.75rem;
-  background: var(--green-bg);
-  color: var(--green);
+  background: var(--accent-muted);
+  color: var(--accent);
   font-size: 0.8rem;
   font-weight: 600;
   border-radius: var(--radius-full);
-  border: 1px solid rgba(26,127,55,0.2);
+  border: 1px solid var(--accent-light);
 }
 
 /* ================================================
@@ -347,12 +347,19 @@ tbody tr:hover td { background: var(--bg-subtle); }
    CONTACT FORM (contact.md)
    ================================================ */
 
+.contact-card {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-muted);
+  border-radius: var(--radius);
+  padding: 1.8rem 2rem;
+  max-width: 600px;
+  margin-top: 1.5rem;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  max-width: 520px;
-  margin-top: 1.5rem;
 }
 
 .form-group {
@@ -362,20 +369,20 @@ tbody tr:hover td { background: var(--bg-subtle); }
 }
 
 .form-group label {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--text-primary);
 }
 
 .form-group input,
 .form-group textarea {
-  padding: 0.6rem 0.9rem;
+  padding: 0.65rem 0.9rem;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   font-size: 1rem;
   font-family: inherit;
   color: var(--text-primary);
-  background: var(--bg);
+  background: var(--surface);
   transition: border-color var(--ease), box-shadow var(--ease);
   width: 100%;
 }
@@ -388,6 +395,39 @@ tbody tr:hover td { background: var(--bg-subtle); }
 }
 
 .form-group textarea { resize: vertical; min-height: 130px; }
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.65rem 1.4rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color var(--ease), border-color var(--ease), box-shadow var(--ease), transform var(--ease);
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #ffffff !important;
+}
+.btn-primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+.btn-primary:active {
+  transform: translateY(0);
+}
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(9,105,218,0.3);
+}
 
 /* ================================================
    PROJECT CARDS (portfolio + github)
