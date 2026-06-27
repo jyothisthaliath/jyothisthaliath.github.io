@@ -13,32 +13,30 @@
   </head>
   <body>
 
-    <nav class="topnav" id="topnav">
-      <div class="topnav-inner">
-        <a href="{{ '/' | relative_url }}" class="topnav-brand">Jyothis Thaliath</a>
+    <header class="site-hero" id="site-hero">
+      <div class="site-hero-inner">
+        <div class="hero-profile">
+          <img src="{{ '/images/jyothis.jpg' | relative_url }}" alt="Jyothis George Thaliath" class="hero-photo">
+          <div class="hero-content">
+            <h1 class="hero-name">Jyothis George Thaliath</h1>
+            <p class="hero-title">Senior Manager – Information Security · Union Bank of India</p>
+            <p class="hero-tagline">Translating security strategy into resilient banking infrastructure</p>
+          </div>
+        </div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
         <label for="nav-toggle" class="nav-hamburger" aria-label="Toggle navigation">
           <span></span><span></span><span></span>
         </label>
-        <ul class="nav-links" role="list">
-          <li><a href="{{ '/' | relative_url }}" class="nav-link{% if page.url == '/' %} active{% endif %}">Home</a></li>
-          <li><a href="{{ '/projects.html' | relative_url }}" class="nav-link{% if page.url == '/projects.html' %} active{% endif %}">Projects</a></li>
-          <li><a href="{{ '/career.html' | relative_url }}" class="nav-link{% if page.url == '/career.html' %} active{% endif %}">Career</a></li>
-          <li><a href="{{ '/contact.html' | relative_url }}" class="nav-link{% if page.url == '/contact.html' %} active{% endif %}">Contact</a></li>
-        </ul>
+        <nav>
+          <ul class="nav-links" role="list">
+            <li><a href="{{ '/' | relative_url }}" class="nav-link{% if page.url == '/' %} active{% endif %}">Home</a></li>
+            <li><a href="{{ '/projects.html' | relative_url }}" class="nav-link{% if page.url == '/projects.html' %} active{% endif %}">Projects</a></li>
+            <li><a href="{{ '/career.html' | relative_url }}" class="nav-link{% if page.url == '/career.html' %} active{% endif %}">Career</a></li>
+            <li><a href="{{ '/contact.html' | relative_url }}" class="nav-link{% if page.url == '/contact.html' %} active{% endif %}">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </nav>
-
-    <div class="site-hero">
-      <div class="site-hero-inner">
-        <img src="{{ '/images/jyothis.jpg' | relative_url }}" alt="Jyothis George Thaliath" class="hero-photo">
-        <div class="hero-content">
-          <h1 class="hero-name">Jyothis George Thaliath</h1>
-          <p class="hero-title">Senior Manager – Information Security · Union Bank of India</p>
-          <p class="hero-tagline">Translating security strategy into resilient banking infrastructure</p>
-        </div>
-      </div>
-    </div>
+    </header>
 
     <main class="main-container" id="main-content">
       {{ content }}
@@ -71,9 +69,9 @@
     </footer>
 
     <script>
-      const nav = document.getElementById('topnav');
+      const hero = document.getElementById('site-hero');
       window.addEventListener('scroll', function() {
-        nav.classList.toggle('scrolled', window.scrollY > 8);
+        hero.classList.toggle('scrolled', window.scrollY > 8);
       });
     </script>
 
