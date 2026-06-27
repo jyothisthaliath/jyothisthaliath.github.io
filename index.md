@@ -2,14 +2,7 @@
 layout: default
 title: Jyothis George Thaliath | Information Security Leader
 ---
-<div class="hero">
-  <img src="{{ '/images/jyothis.jpg' | relative_url }}" alt="Jyothis George Thaliath" class="hero-photo">
-  <div class="hero-content">
-    <h1 class="hero-name">Jyothis George Thaliath</h1>
-    <p class="hero-title">Senior Manager – Information Security · Union Bank of India</p>
-    <p class="hero-tagline">Translating security strategy into resilient banking infrastructure </p>
-  </div>
-</div>
+
 I manage enterprise security infrastructure and regulatory compliance within the banking sector. Over the past 13+ years, my work has focused on operating network security systems, modernizing Security Operations Centre (SOC), and coordinating technical project governance across cross-functional teams.
 
 Outside of my day job, I maintain a home lab environment with self-hosted services. I experiment with automation scripts, and test infrastructure configurations.  
