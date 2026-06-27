@@ -17,9 +17,11 @@
 
   <header class="site-hero" id="site-hero">
     <div class="site-hero-inner">
-      <img src="{{ '/images/jyothis.jpg' | relative_url }}" alt="Jyothis George Thaliath" class="hero-photo">
+      <a href="{{ '/' | relative_url }}" class="hero-photo-link">
+        <img src="{{ '/images/jyothis.jpg' | relative_url }}" alt="Jyothis George Thaliath" class="hero-photo">
+      </a>
       <div class="hero-content">
-        <h1 class="hero-name">Jyothis George Thaliath</h1>
+        <h1 class="hero-name"><a href="{{ '/' | relative_url }}">Jyothis George Thaliath</a></h1>
         <p class="hero-title">Information Security Leader</p>
         <p class="hero-tagline">Translating security strategy into resilient banking infrastructure</p>
       </div>
