@@ -96,23 +96,23 @@ strong { font-weight: 600; color: var(--text-primary); }
 .site-hero-inner {
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: 1rem 1.5rem;
+  padding: 1.4rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1.75rem;
 }
 
 /* Profile block (photo + text — direct flex children of site-hero-inner) */
 .hero-photo {
   flex-shrink: 0;
-  width: 64px;
-  height: 64px;
+  width: 88px;
+  height: 88px;
   border-radius: var(--radius-full);
   object-fit: cover;
   object-position: center top;
-  border: 2px solid var(--border);
-  box-shadow: var(--shadow-sm);
+  border: 3px solid var(--border);
+  box-shadow: var(--shadow-md);
   align-self: center;
   display: block;
 }
@@ -124,25 +124,25 @@ strong { font-weight: 600; color: var(--text-primary); }
 }
 
 .hero-name {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
   color: var(--text-primary);
-  margin: 0 0 0.2rem;
+  margin: 0 0 0.25rem;
 }
 
 .hero-title {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--accent);
-  margin: 0 0 0.15rem;
+  margin: 0 0 0.2rem;
 }
 
 .hero-tagline {
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 /* Nav (right side) */
@@ -318,7 +318,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 1.25rem 0;
-  font-size: 0.88rem;
+  font-size: 1rem;
 }
 
 thead th {
@@ -359,17 +359,17 @@ tbody tr:hover td { background: var(--bg-subtle); }
 }
 
 .form-group label {
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--text-primary);
 }
 
 .form-group input,
 .form-group textarea {
-  padding: 0.55rem 0.85rem;
+  padding: 0.6rem 0.9rem;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: inherit;
   color: var(--text-primary);
   background: var(--bg);
@@ -407,12 +407,12 @@ tbody tr:hover td { background: var(--bg-subtle); }
 }
 
 #repo-list li strong a {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: var(--accent) !important;
 }
-#repo-list li p { font-size: 0.875rem; color: var(--text-muted); margin: 0.3rem 0; }
-#repo-list li small { font-size: 0.78rem; color: var(--text-muted); display: block; margin-top: 0.5rem; }
+#repo-list li p { font-size: 1rem; color: var(--text-muted); margin: 0.35rem 0; }
+#repo-list li small { font-size: 0.85rem; color: var(--text-muted); display: block; margin-top: 0.5rem; }
 
 /* ================================================
    FOOTER
@@ -483,12 +483,12 @@ tbody tr:hover td { background: var(--bg-subtle); }
 }
 
 .timeline-entry {
-  padding: 1.1rem 1.2rem;
+  padding: 1.2rem 1.4rem;
   border-left: 3px solid var(--accent-light);
   background: var(--bg-subtle);
   border-radius: 0 var(--radius) var(--radius) 0;
   margin-bottom: 1rem;
 }
-.timeline-entry h4 { color: var(--text-primary); margin: 0 0 0.2rem; }
-.timeline-entry .meta { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.4rem; }
-.timeline-entry p { font-size: 0.875rem; margin: 0; }
+.timeline-entry h4 { color: var(--text-primary); margin: 0 0 0.2rem; font-size: 1.05rem; }
+.timeline-entry .meta { font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+.timeline-entry p { font-size: 1rem; margin: 0; line-height: 1.65; }
